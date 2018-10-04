@@ -1,0 +1,22 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\runelite-client",
+    "\\runelite-client\\src",
+    "\\runelite-client\\src\\main",
+    "\\runelite-client\\src\\main\\java",
+    "\\runelite-client\\src\\main\\java\\net",
+    "\\runelite-client\\src\\main\\java\\net\\runelite",
+    "\\runelite-client\\src\\main\\java\\net\\runelite\\client",
+    "\\runelite-client\\src\\main\\java\\net\\runelite\\client\\plugins",
+    "\\runelite-client\\src\\main\\java\\net\\runelite\\client\\plugins\\idlenotifier",
+    "\\runescape-client-injector-plugin",
+    "\\runescape-client-injector-plugin\\src",
+    "\\runescape-client-injector-plugin\\src\\main",
+    "\\runescape-client-injector-plugin\\src\\main\\java",
+    "\\runescape-client-injector-plugin\\src\\main\\java\\net",
+    "\\runescape-client-injector-plugin\\src\\main\\java\\net\\runelite",
+    "\\runescape-client-injector-plugin\\src\\main\\java\\net\\runelite\\injector"
+  ],
+  "PreviewInSolutionExplorer": false
+}

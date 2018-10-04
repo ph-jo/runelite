@@ -79,6 +79,7 @@ public interface IdleNotifierConfig extends Config
 		return 0;
 	}
 
+
 	@ConfigItem(
 		keyName = "prayer",
 		name = "Prayer Notification Threshold",
@@ -89,4 +90,16 @@ public interface IdleNotifierConfig extends Config
 	{
 		return 0;
 	}
+
+
+	@ConfigItem(
+        keyName ="xyrec",
+            name = "Xyrec Rock cake Threshold",
+            description = "Siger til xyrec at han skal rock cake i skoletiden",
+            position = 6
+	)
+	default boolean getXyrecThreshold(){
+		return true;
+	}
+
 }

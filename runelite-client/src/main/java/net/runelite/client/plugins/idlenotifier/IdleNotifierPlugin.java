@@ -69,7 +69,7 @@ public class IdleNotifierPlugin extends Plugin
 	private boolean notifyPrayer = true;
 	private boolean notifyIdleLogout = true;
 	private boolean notify6HourLogout = true;
-
+	private boolean notifyRockCake = false;
 	private Instant sixHourWarningTime;
 	private boolean ready;
 
@@ -247,8 +247,26 @@ public class IdleNotifierPlugin extends Plugin
 		{
 			notifier.notify("[" + local.getName() + "] has low prayer!");
 		}
-	}
 
+		if(checkRockCake())
+		{
+			notifier.notify("Xyrec dit svin spis din rock cake dig hilsen PH");
+		}
+	}
+	private boolean checkRockCake(){
+        if(config.getXyrecThreshold() != true){
+            return false;
+        }
+        if(client.getBoostedSkillLevel(Skill.HITPOINTS) >= 2){
+            if(!notifyHitpoints){
+                notifyHitpoints = true;
+                return true;
+            }else{
+                notifyHitpoints = false;
+            }
+        }
+		return false;
+	}
 	private boolean checkLowHitpoints()
 	{
 		if (config.getHitpointsThreshold() == 0)
@@ -272,7 +290,10 @@ public class IdleNotifierPlugin extends Plugin
 		}
 
 		return false;
+		
 	}
+
+
 
 	private boolean checkLowPrayer()
 	{
